@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saka – Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body><header>
+  <h1>Crafting Code that Tells a Story with Data</h1>
+
+  <nav class="nav-links">
+    <div class="menu">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+    </div>
+
+    <div class="social-icons">
+      <!-- GitHub -->
+      <a href="https://github.com/sotyasaksi" aria-label="GitHub">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2.9-.3 2-.4 3-.4 1 0 2 .1 3 .4 2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.8-1.6 8.2-6.1 8.2-11.4 0-6.6-5.4-12-12-12z"/>
+        </svg>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/in/sotyasaksi" aria-label="LinkedIn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.9-3-1.9 0-2.1 1.5-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.3-1.9 3.6 0 4.3 2.4 4.3 5.5v6.3zM5.3 7.4c-1.1 0-2.1-.9-2.1-2.1S4.2 3.2 5.3 3.2c1.1 0 2.1.9 2.1 2.1s-.9 2.1-2.1 2.1zM7.1 20.5H3.6V9h3.5v11.5z"/>
+        </svg>
+      </a>
+
+      <!-- Gmail -->
+      <a href="mailto:sotyasaksi@gmail.com" aria-label="Email">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 
+                   2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 
+                   4-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://instagram.com/sakatakatasaka" aria-label="Instagram">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M7 2C4.2 2 2 4.2 2 7v10c0 
+                   2.8 2.2 5 5 5h10c2.8 0 5-2.2 
+                   5-5V7c0-2.8-2.2-5-5-5H7zm10 
+                   2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 
+                   3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 
+                   1.3-3 3-3h10zm-5 3a5 5 0 100 
+                   10 5 5 0 000-10zm0 2a3 3 0 110 
+                   6 3 3 0 010-6zm4.8-2.9a1.1 1.1 0 
+                   100 2.2 1.1 1.1 0 000-2.2z"/>
+        </svg>
+      </a>
+    </div>
+  </nav>
+</header>
+
+
+<main>
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <!-- Dashboard -->
+<div class="card">
+  <img src="images/dashboard-screenshot.png" alt="Screenshot of Dashboard">
+  <div class="card-content">
+    <h3>Evaluation Dashboard</h3>
+    <p>Interactive dashboard with calendar views, SLS maps, and performance tracking.</p>
+    
+    <!-- Tech stack tags -->
+    <div class="tech-stack">
+      <span class="tech-tag">JavaScript</span>
+      <span class="tech-tag">Leaflet.js</span>
+      <span class="tech-tag">D3.js</span>
+      <span class="tech-tag">CSV</span>
+    </div>
+    
+    <!-- Links -->
+    <div class="links">
+      <a href="https://saka.is-a.dev/dashboard" target="_blank">Live Demo</a>
+      <a href="https://github.com/sotyasaksi/TarkiraSE" target="_blank">Source Code</a>
+    </div>
+  </div>
+</div>
+
+<!-- WhatsApp Bot -->
+<div class="card">
+  <img src="images/wa-bot-screenshot.png" alt="Screenshot of WhatsApp Bot">
+  <div class="card-content">
+    <h3>WhatsApp Bot</h3>
+    <p>A Node.js bot with CSV logging, reverse geocoding, and interactive commands.</p>
+    
+    <!-- Tech stack tags -->
+    <div class="tech-stack">
+      <span class="tech-tag">Node.js</span>
+      <span class="tech-tag">Puppeteer</span>
+      <span class="tech-tag">Express</span>
+      <span class="tech-tag">Google Sheets API</span>
+    </div>
+    
+    <!-- Links -->
+    <div class="links">
+      <a href="https://saka.is-a.dev/wa-bot" target="_blank">Live Demo</a>
+      <a href="https://github.com/sotyasaksi/TarkiraSE-Bot" target="_blank">Source Code</a>
+    </div>
+  </div>
+</div>
+
+<!-- Web Quiz -->
+<div class="card">
+  <img src="images/quiz-screenshot.jpg" alt="Screenshot of Web Quiz">
+  <div class="card-content">
+    <h3>Interactive Quiz</h3>
+    <p>A simple web quiz app with JavaScript, designed to engage users and test knowledge.</p>
+    
+    <!-- Tech stack tags -->
+    <div class="tech-stack">
+      <span class="tech-tag">HTML</span>
+      <span class="tech-tag">CSS</span>
+      <span class="tech-tag">JavaScript</span>
+    </div>
+    
+    <!-- Links -->
+    <div class="links">
+      <a href="https://saka.is-a.dev/quiz" target="_blank">Live Demo</a>
+      <a href="https://github.com/sotyasaksi/ClaimYourScoreQuiz" target="_blank">Source Code</a>
+    </div>
+  </div>
+</div>
+
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="about-text">
+      I am a builder who speaks the language of data. I specialize in transforming raw numbers 
+      and complex statistics into interactive, visual stories—whether it's through a dynamic 
+      dashboard, an automated bot, or a custom web tool. My work lives at the intersection of 
+      logic and creativity. When I'm not coding, I explore ideas from a different angle, writing 
+      essays on <em>Dialektika di Toilet</em>. This portfolio is a collection of the fragments 
+      where my analytical and philosophical sides meet.
+    </p>
+  </section>
+  
+  <section id="skills">
+    <h2>Skills & Technologies</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Frontend</h3>
+        <div class="skill-bar" data-skill="95"><span>JavaScript/TypeScript</span></div>
+        <div class="skill-bar" data-skill="90"><span>React/Vue</span></div>
+        <div class="skill-bar" data-skill="85"><span>CSS/SCSS</span></div>
+      </div>
+      <div class="skill-category">
+        <h3>Backend</h3>
+        <div class="skill-bar" data-skill="88"><span>Node.js</span></div>
+        <div class="skill-bar" data-skill="82"><span>Python</span></div>
+        <div class="skill-bar" data-skill="80"><span>SQL/NoSQL</span></div>
+      </div>
+      <div class="skill-category">
+        <h3>Data & Visualization</h3>
+        <div class="skill-bar" data-skill="92"><span>D3.js</span></div>
+        <div class="skill-bar" data-skill="85"><span>Leaflet/Maps</span></div>
+        <div class="skill-bar" data-skill="88"><span>Data Analysis</span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer>
+  <a href="#" class="back-to-top" id="backToTop">↑</a>
+  &copy; 2025 Saka. Built with gastritis and never ending caffeine-addiction.
+</footer>
+
+<!-- Add this script before </body> -->
+<script>
+  const backToTop = document.getElementById('backToTop');
+  
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+      backToTop.classList.add('visible');
+    } else {
+      backToTop.classList.remove('visible');
+    }
+  });
+</script>
+</body>
+</html>
