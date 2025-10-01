@@ -289,3 +289,19 @@
   .back-to-top.visible {
     opacity: 1;
   }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav .logo img {
+    height: 20px;   /* sesuaikan */
+    width: auto;
+  }
+
+  header .logo img {
+    height: 200px;
+    width: auto;
+  }
+  

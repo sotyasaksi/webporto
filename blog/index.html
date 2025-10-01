@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog - Dialektika di Toilet</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/svg+xml" href="../logo.svg">
+<link rel="alternate icon" href="../logo.png"> <!-- fallback kalau browser lama -->
+
+  <style>
+    html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;   /* ✅ cegah scroll horizontal */
+}
+    .blog-container {
+  max-width: 900px;     /* lebih lebar biar nggak terlalu sempit */
+  margin: 50px auto;    /* tetap center */
+  padding: 0 20px;      /* kasih napas */
+  box-sizing: border-box;
+}
+   .post h2 {
+      margin: 0 0 10px;
+    }
+    .post small {
+      display: block;
+      margin-bottom: 15px;
+      color: #777;
+    }
+.post img, 
+.post iframe, 
+.post video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post {
+  overflow-wrap: break-word;  /* teks panjang auto patah */
+  word-break: break-word;
+  text-align: justify;
+}
+
+
+.post img {
+  max-width: 100%;          /* ✅ supaya gambar muat di box */
+  height: auto;             /* jaga proporsi */
+  display: block;           /* biar nggak ada spasi aneh */
+  margin: 15px auto;        /* kasih jarak dan center */
+}
+
+.post div {
+  line-height: 1.6;
+}
+nav a {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+header .logo img {
+  height: 100px;
+  width: auto;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html" class="logo">
+        <img src="../logo.svg" alt="Logo" />
+      </a>
+      <nav>
+     <a href="../index.html">Home</a>
+      <a href="index.html">Blog</a>
+    </nav>
+  </header>
+
+  <main class="blog-container">
+    <div id="posts"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dialektika di Toilet</p>
+  </footer>
+
+  <script>
+    fetch("posts.json")
+      .then(res => res.json())
+      .then(posts => {
+        // Urutkan descending berdasarkan tanggal
+        posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+  
+        const container = document.getElementById("posts");
+        posts.forEach(p => {
+          const article = document.createElement("article");
+          article.classList.add("post");
+          article.innerHTML = `
+            <h2>${p.title}</h2>
+            <small>${p.date}</small>
+            <div>${p.content}</div>
+          `;
+          container.appendChild(article);
+        });
+      });
+  </script>
+  
+</body>
+</html>
